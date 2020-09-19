@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Line } from "react-chartjs-2";
+import { Line, Doughnut, Graph } from "react-chartjs-2";
 // import generator from "./assets/images/generator.gif";
 import githubicon from "./assets/images/githubIcon.png";
 import linkedin from "./assets/images/linkedin.png";
@@ -38,12 +38,71 @@ function App() {
       },
     ],
   };
+  const data2 = {
+    labels: ["Red", "Green", "Yellow"],
+    datasets: [
+      {
+        data: [300, 50, 100],
+        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+      },
+    ],
+  };
+  // const [counter, setCounter] = useState({
+  //   labels: ["January", "February", "March", "April", "May", "June", "July"],
+  //   datasets: [
+  //     {
+  //       label: "My First dataset",
+  //       fill: false,
+  //       lineTension: 0.1,
+  //       backgroundColor: "rgba(75,192,192,0.4)",
+  //       borderColor: "rgba(75,192,192,1)",
+  //       borderCapStyle: "butt",
+  //       borderDash: [],
+  //       borderDashOffset: 0.0,
+  //       borderJoinStyle: "miter",
+  //       pointBorderColor: "rgba(75,192,192,1)",
+  //       pointBackgroundColor: "#fff",
+  //       pointBorderWidth: 1,
+  //       pointHoverRadius: 5,
+  //       pointHoverBackgroundColor: "rgba(75,192,192,1)",
+  //       pointHoverBorderColor: "rgba(220,220,220,1)",
+  //       pointHoverBorderWidth: 2,
+  //       pointRadius: 1,
+  //       pointHitRadius: 10,
+  //       data: [65, 59, 80, 81, 56, 55, 40],
+  //     },
+  //   ],
+  // });
+  // useEffect(() => {
+  //   setInterval(function () {
+  //     var oldDataSet = counter.datasets[0];
+  //     var newData = [];
 
+  //     for (var x = 0; x < counter.labels.length; x++) {
+  //       newData.push(Math.floor(Math.random() * 100));
+  //     }
+
+  //     var newDataSet = {
+  //       ...oldDataSet,
+  //     };
+
+  //     newDataSet.data = newData;
+
+  //     // var newState = {
+  //     //   ...initialState,
+  //     //   datasets: [newDataSet],
+  //     // };
+
+  //     setCounter(newData);
+  //   }, 5000);
+  // }, []);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={WhiteLogo} alt="osiris logo" style={{ height: "400px", width: "1200px" }} />
-        <h2> UI Component Library | Generator | Page Builder</h2>
+        {/* <img src={WhiteLogo} alt="osiris logo" style={{ height: "400px", width: "1200px" }} /> */}
+        {/* <h2> UI Component Library | Generator | Page Builder</h2> */}
+        <h2> Adam's Actuary Site</h2>
         {/* <div class="downloads">
         <button>Download for <i class="fab fa-apple fa-75x"></i></button> 
         <button>Download for <i class="fab fa-windows fa-75x"></i></button> 
@@ -51,16 +110,20 @@ function App() {
         <div class="social-container">
           <button>
             <a
-              href="https://github.com/oslabs-beta/Osiris"
+              href="https://www.chartjs.org/samples/latest/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Star us on <i class="fab fa-github fa-75x"></i>
+              Chart.js Samples
             </a>
           </button>
           <button>
-            <a href="http://twitter.com/osiris_io" target="_blank" rel="noopener noreferrer">
-              Follow us on <i class="fab fa-twitter fa-75x"></i>
+            <a
+              href="https://github.com/jerairrest/react-chartjs-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              React Chart.js 2 <i class="fab fa-github fa-75x"></i>
             </a>
           </button>
           <button>
@@ -79,17 +142,20 @@ function App() {
       <body>
         <div className="feature1wrap">
           <div className="feature1">
-            <h1>UI Generator and Library Features</h1>
+            {/* <h1>UI Generator and Library Features</h1> */}
+            <h1>First Graph</h1>
             <ul>
-              <li>Create custom components in React or Vue</li>
+              <li>Create custom doughnut graphs</li>
               <br></br>
               <li> . . . </li>
               <br></br>
-              <li>Store your custom components securely in our UI Library powered by AWS S3</li>
+              <li>This is what a couple lines of text would look like</li>
             </ul>
           </div>
           <div className="feature1img">
             {/* <img className="gif" src={generator} alt="generator demo gif" /> */}
+            <h2> First Graph</h2>
+            <Doughnut data={data} />
           </div>
         </div>
         {/* 3 gifs * 
@@ -108,32 +174,26 @@ function App() {
               Build Page:<br></br>Style and Add to Build
             </h1>
             <ul>
-              <li>
-                Easily build a React or Vue page by controlling the hierarchy of your custom
-                components stored in your library.
-              </li>
+              <li>Check out this sick graph on the left</li>
               <br></br>
               <li> . . . </li>
               <br></br>
-              <li>Customize your components by adding CSS and text</li>
+              <li>Most people think this is the surface</li>
             </ul>
           </div>
         </div>
         <div className="feature3wrap">
           <div className="feature3">
             <h1>
-              Build Page:<br></br>Hierarchy & Download Code to Vue or React{" "}
+              If<br></br>Only{" "}
             </h1>
             <ul>
-              <li>Edit the hierarchy with simple arrow buttons</li>
+              <li>they knew</li>
               <br></br>
               <li> . . . </li>
               <br></br>
-              <li>
-                Choose to build your React page with/without State or Hooks. You can also build a
-                Vue page with or without State{" "}
-              </li>
-              <li>Download your page directly.</li>
+              <li>Lots of text to make it seem like we know what we're doing </li>
+              <li>Three rows looks like this</li>
             </ul>
           </div>
           <div className="feature3img">
@@ -142,56 +202,8 @@ function App() {
         </div>
       </body>
       <footer>
-        <h1 className="engineer-team">Our Team of Engineers</h1>
+        <h1 className="engineer-team">Our Team of Actuaries</h1>
         <div className="profiles">
-          <div className="profile">
-            <p>Eelan Tung</p>
-            <img src={Eelan} alt="Eelan Profile pic" className="profilepic" />
-            <div className="profileLinks">
-              <a href="https://github.com/cupofjoy" target="_blank" rel="noopener noreferrer">
-                <img className="githubicon" alt="github" src={githubicon} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/eelantung/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="githubicon" alt="github" src={linkedin} />
-              </a>
-            </div>
-          </div>
-          <div className="profile">
-            <p>Cameron Fitz</p>
-            <img src={Cameron} alt="Cameron Profile pic" className="profilepic" />
-            <div className="profileLinks">
-              <a href="https://github.com/cameronleefitz" target="_blank" rel="noopener noreferrer">
-                <img className="githubicon" alt="github" src={githubicon} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/cameron-fitz-113142166/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="githubicon" alt="github" src={linkedin} />
-              </a>
-            </div>
-          </div>
-          <div className="profile">
-            <p>Jeho Cruz</p>
-            <img src={Jeho} alt="Jeho Profile pic" className="profilepic" />
-            <div className="profileLinks">
-              <a href="https://github.com/howaboutjeho" target="_blank" rel="noopener noreferrer">
-                <img className="githubicon" alt="github" src={githubicon} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jehovany-cruz/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="githubicon" alt="github" src={linkedin} />
-              </a>
-            </div>
-          </div>
           <div className="profile">
             <p>Garrett Lee</p>
             <img src={Garrett} alt="Garrett Profile pic" className="profilepic" />
@@ -200,22 +212,6 @@ function App() {
                 <img className="githubicon" alt="github" src={githubicon} />
               </a>
               <a href="https://www.linkedin.com/in/gl6/" target="_blank" rel="noopener noreferrer">
-                <img className="githubicon" alt="github" src={linkedin} />
-              </a>
-            </div>
-          </div>
-          <div className="profile">
-            <p>Wayne Wilcox</p>
-            <img src={Wayne} alt="Wayne Profile pic" className="profilepic" />
-            <div className="profileLinks">
-              <a href="https://github.com/LovelaceDink" target="_blank" rel="noopener noreferrer">
-                <img className="githubicon" alt="github" src={githubicon} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/wayne-wilcox-33b8618/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
                 <img className="githubicon" alt="github" src={linkedin} />
               </a>
             </div>
