@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/adam/static/css/main.90224736.chunk.css",
-    "main.js": "/adam/static/js/main.18ac4572.chunk.js",
-    "main.js.map": "/adam/static/js/main.18ac4572.chunk.js.map",
-    "runtime-main.js": "/adam/static/js/runtime-main.9ee9d59e.js",
-    "runtime-main.js.map": "/adam/static/js/runtime-main.9ee9d59e.js.map",
-    "static/js/2.d403a4f0.chunk.js": "/adam/static/js/2.d403a4f0.chunk.js",
-    "static/js/2.d403a4f0.chunk.js.map": "/adam/static/js/2.d403a4f0.chunk.js.map",
-    "index.html": "/adam/index.html",
-    "precache-manifest.0bce318270c0779ae8c92ced1e89d6fa.js": "/adam/precache-manifest.0bce318270c0779ae8c92ced1e89d6fa.js",
-    "service-worker.js": "/adam/service-worker.js",
-    "static/css/main.90224736.chunk.css.map": "/adam/static/css/main.90224736.chunk.css.map",
-    "static/js/2.d403a4f0.chunk.js.LICENSE.txt": "/adam/static/js/2.d403a4f0.chunk.js.LICENSE.txt",
-    "static/media/Cameron.jpeg": "/adam/static/media/Cameron.8890e423.jpeg",
-    "static/media/Eelan.jpg": "/adam/static/media/Eelan.3795578b.jpg",
-    "static/media/Garrett.jpg": "/adam/static/media/Garrett.e363e6c4.jpg",
-    "static/media/Jeho.jpg": "/adam/static/media/Jeho.45c792b4.jpg",
-    "static/media/Wayne.jpg": "/adam/static/media/Wayne.6ff867fd.jpg",
-    "static/media/WhiteLogo.png": "/adam/static/media/WhiteLogo.7d35e7c3.png",
-    "static/media/githubIcon.png": "/adam/static/media/githubIcon.7b868d31.png",
-    "static/media/linkedin.png": "/adam/static/media/linkedin.59ded5b5.png"
+    "main.css": "/adam-master/static/css/main.90224736.chunk.css",
+    "main.js": "/adam-master/static/js/main.b262b5fa.chunk.js",
+    "main.js.map": "/adam-master/static/js/main.b262b5fa.chunk.js.map",
+    "runtime-main.js": "/adam-master/static/js/runtime-main.283b50ae.js",
+    "runtime-main.js.map": "/adam-master/static/js/runtime-main.283b50ae.js.map",
+    "static/js/2.eac2bba5.chunk.js": "/adam-master/static/js/2.eac2bba5.chunk.js",
+    "static/js/2.eac2bba5.chunk.js.map": "/adam-master/static/js/2.eac2bba5.chunk.js.map",
+    "index.html": "/adam-master/index.html",
+    "precache-manifest.caf16fed35541e94e904017b2ef54a9d.js": "/adam-master/precache-manifest.caf16fed35541e94e904017b2ef54a9d.js",
+    "service-worker.js": "/adam-master/service-worker.js",
+    "static/css/main.90224736.chunk.css.map": "/adam-master/static/css/main.90224736.chunk.css.map",
+    "static/js/2.eac2bba5.chunk.js.LICENSE.txt": "/adam-master/static/js/2.eac2bba5.chunk.js.LICENSE.txt",
+    "static/media/Cameron.jpeg": "/adam-master/static/media/Cameron.8890e423.jpeg",
+    "static/media/Eelan.jpg": "/adam-master/static/media/Eelan.3795578b.jpg",
+    "static/media/Garrett.jpg": "/adam-master/static/media/Garrett.e363e6c4.jpg",
+    "static/media/Jeho.jpg": "/adam-master/static/media/Jeho.45c792b4.jpg",
+    "static/media/Wayne.jpg": "/adam-master/static/media/Wayne.6ff867fd.jpg",
+    "static/media/WhiteLogo.png": "/adam-master/static/media/WhiteLogo.7d35e7c3.png",
+    "static/media/githubIcon.png": "/adam-master/static/media/githubIcon.7b868d31.png",
+    "static/media/linkedin.png": "/adam-master/static/media/linkedin.59ded5b5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ee9d59e.js",
-    "static/js/2.d403a4f0.chunk.js",
+    "static/js/runtime-main.283b50ae.js",
+    "static/js/2.eac2bba5.chunk.js",
     "static/css/main.90224736.chunk.css",
-    "static/js/main.18ac4572.chunk.js"
+    "static/js/main.b262b5fa.chunk.js"
   ]
 }
